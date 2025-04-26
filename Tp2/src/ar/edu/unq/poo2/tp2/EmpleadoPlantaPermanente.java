@@ -49,22 +49,22 @@ public class EmpleadoPlantaPermanente extends Empleado{
 	@Override
 	public String infoRetenciones() {
 		
-		return "Obra social : " + this.obraSocial() + "\n" +
-			   "Retencion Por Hijo : " + this.retencionPorHijo() + "\n" +
+		return "Obra social : " 	     + this.obraSocial()          + "\n" +
+			   "Retencion Por Hijo : "   + this.retencionPorHijo()    + "\n" +
 			   "Aportes Jubilatorios : " + this.aportesJubilatorios() + "\n" +
-			   "TOTAL RETENCIONES : "  + this.retenciones();
+			   "TOTAL RETENCIONES : "    + this.retenciones();
 			
 			   
 	}
 	
 	@Override
 	public String infoSueldoBruto() {
-		return "Sueldo Basico : " + this.getSueldoBasico() + "\n" +
-			   "Salario Familiar : " + "\n" +
-			   "++ Asignacion Por Hijo : " + this.asignacionPorHijo() + "\n" +
+		return "Sueldo Basico : " 			  + this.getSueldoBasico() 		+ "\n" +
+			   "Salario Familiar : " 		  								+ "\n" +
+			   "++ Asignacion Por Hijo : " 	  + this.asignacionPorHijo() 	+ "\n" +
 			   "++ Asignacion Por Conyuge : " + this.asignacionPorConyuge() + "\n" +
-			   "++ Antiguedad : " + this.bonoPorAntiguedad() + "\n" +
-			   "TOTAL SUELDO BRUTO : " + this.sueldoBruto(); 
+			   "++ Antiguedad : " 			  + this.bonoPorAntiguedad() 	+ "\n" +
+			   "TOTAL SUELDO BRUTO : " 		  + this.sueldoBruto(); 
 				   
 	}
 	

@@ -48,7 +48,7 @@ public class Contratado extends Empleado {
 	public String infoRetenciones() {
 		
 		return "Gastos Administrativos Contractuales : " + this.gastosAdministrativosContractuales() + "\n" +
-			   "TOTAL RETENCIONES : " + this.retenciones();
+			   "TOTAL RETENCIONES : " 					 + this.retenciones();
 	}
 
 	@Override

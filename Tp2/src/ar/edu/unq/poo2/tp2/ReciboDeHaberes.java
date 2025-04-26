@@ -11,6 +11,7 @@ public class ReciboDeHaberes {
 	private double sueldoBruto;
 	private double sueldoNeto;
 	private String desgloce;
+	private Empleado empleado;
 	
 	//Constructor
 	public ReciboDeHaberes(Empleado e, LocalDateTime fechaDeEmision) {
@@ -20,6 +21,7 @@ public class ReciboDeHaberes {
 		this.fechaDeEmision = fechaDeEmision;
 		this.sueldoBruto    = e.sueldoBruto();
 		this.sueldoNeto     = e.sueldoNeto();
+		this.empleado 		= e;
 		
 		//Una vez inicializados los atributos puedo generar el desgloce
 		this.desgloce = this.generarDesgloce(e);
@@ -42,4 +44,18 @@ public class ReciboDeHaberes {
 	public String getDesgloce() {
 		return this.desgloce;
 	}
+
+
+
+	public String getNombre() {
+		return nombre;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }
